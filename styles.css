@@ -1,0 +1,203 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bogo-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.bogo-title {
+  color: #ff5c8a;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bogo-offer {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.bogo-offer-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bogo-discount {
+  background-color: #ff5c8a;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.bogo-discount-red {
+  background-color: #f04d4d;
+}
+
+.bogo-offer-info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bogo-offer-info label {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.bogo-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.bogo-old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.bogo-most-popular {
+  background-color: #ff5c8a;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  border-radius: 4px;
+}
+
+.bogo-offer-details {
+  display: none;
+  padding: 15px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #fafafa;
+}
+
+.bogo-selection {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bogo-selection label {
+  flex-basis: 45%;
+  text-align: left;
+}
+
+.bogo-selection select {
+  flex-basis: 45%;
+  padding: 5px;
+}
+
+.bogo-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bogo-free-delivery {
+  display: block;
+  color: #ff5c8a;
+  margin-bottom: 5px;
+}
+
+.bogo-total-price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bogo-add-to-cart {
+  background-color: #ff5c8a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.bogo-add-to-cart:hover {
+  background-color: #e54d7e;
+}
+
+.bogo-powered-by {
+  margin-top: 10px;
+  color: #888;
+}
+
+.bogo-brand {
+  color: #ff5c8a;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .bogo-container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .bogo-title {
+    font-size: 20px;
+  }
+
+  .bogo-offer-header {
+    padding: 8px;
+  }
+
+  .bogo-discount,
+  .bogo-most-popular {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .bogo-offer-info label {
+    font-size: 12px;
+  }
+
+  .bogo-price {
+    font-size: 14px;
+  }
+
+  .bogo-old-price {
+    font-size: 10px;
+  }
+
+  .bogo-selection label,
+  .bogo-selection select {
+    flex-basis: 45%;
+  }
+
+  .bogo-add-to-cart {
+    font-size: 14px;
+  }
+}

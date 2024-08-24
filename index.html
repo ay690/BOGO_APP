@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bogo-container">
+      <h1 class="bogo-title">YAY! It's BOGO</h1>
+
+      <div class="bogo-offer" id="offer1">
+        <div
+          class="bogo-offer-header"
+          onclick="toggleOfferDetails('offerDetails1')"
+        >
+          <span class="bogo-discount">30% Off</span>
+          <div class="bogo-offer-info">
+            <input type="radio" name="bogo-offer" id="bogo-offer1-radio" />
+            <label for="bogo-offer1-radio">Buy 1 Get 2</label>
+            <span class="bogo-price">$18.00 USD</span>
+          </div>
+        </div>
+        <div class="bogo-offer-details" id="offerDetails1">
+          <!-- Additional dynamic content could go here -->
+        </div>
+      </div>
+
+      <div class="bogo-offer" id="offer2">
+        <div
+          class="bogo-offer-header"
+          onclick="toggleOfferDetails('offerDetails2')"
+        >
+          <span class="bogo-discount">30% Off</span>
+          <div class="bogo-offer-info">
+            <input type="radio" name="bogo-offer" id="bogo-offer2-radio" />
+            <label for="bogo-offer2-radio">Buy 2 Get 4</label>
+            <span class="bogo-price">$24.00 USD</span>
+            <span class="bogo-most-popular">Most Popular</span>
+          </div>
+        </div>
+        <div class="bogo-offer-details" id="offerDetails2">
+          <!-- Additional dynamic content could go here -->
+        </div>
+      </div>
+
+      <div class="bogo-offer" id="offer3">
+        <div
+          class="bogo-offer-header"
+          onclick="toggleOfferDetails('offerDetails3')"
+        >
+          <span class="bogo-discount bogo-discount-red">10% Off</span>
+          <div class="bogo-offer-info">
+            <input type="radio" name="bogo-offer" id="bogo-offer3-radio" />
+            <label for="bogo-offer3-radio">Buy 3 Get 6</label>
+            <span class="bogo-price">
+              $36.00 USD
+              <span class="bogo-old-price">$40.00 USD</span>
+            </span>
+          </div>
+        </div>
+        <div class="bogo-offer-details" id="offerDetails3">
+          <div class="bogo-selection">
+            <label for="bogo-size1">Size</label>
+            <select id="bogo-size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <label for="bogo-color1">Colour</label>
+            <select id="bogo-color1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Blue">Blue</option>
+            </select>
+          </div>
+          <div class="bogo-selection">
+            <label for="bogo-size2">Size</label>
+            <select id="bogo-size2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <label for="bogo-color2">Colour</label>
+            <select id="bogo-color2">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Blue">Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bogo-footer">
+        <span class="bogo-free-delivery">Free Delivery</span>
+        <span class="bogo-total-price">Total: $18.00 USD</span>
+        <button class="bogo-add-to-cart">+ Add to Cart</button>
+        <p class="bogo-powered-by">
+          Powered by <span class="bogo-brand">Pumper</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
