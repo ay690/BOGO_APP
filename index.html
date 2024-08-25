@@ -11,6 +11,7 @@
     <div class="bogo-container">
       <h1 class="bogo-title">YAY! It's BOGO</h1>
 
+      <!--------------------------- Offer 1 ------------------->
       <div class="bogo-offer" id="offer1">
         <div
           class="bogo-offer-header"
@@ -19,43 +20,57 @@
           <span class="bogo-discount">30% Off</span>
           <div class="bogo-offer-info">
             <input type="radio" name="bogo-offer" id="bogo-offer1-radio" />
-            <label for="bogo-offer1-radio">Buy 1 Get 2</label>
-            <span class="bogo-price">$18.00 USD</span>
+
+            <div class="bogo-offer-title">
+              <label for="bogo-offer1-radio">Buy 1 Get 2</label>
+              <span class="bogo-price">$18.00 USD</span>
+            </div>
           </div>
         </div>
+
         <div class="bogo-offer-details" id="offerDetails1">
-          <div class="bogo-selection">
-            <label for="bogo-size1">Size</label>
-            <select id="bogo-size1">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color1">Colour</label>
-            <select id="bogo-color1">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#1</div>
+            <div class="bogo-column">
+              <label for="bogo-color1">Colour</label>
+              <select id="bogo-color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size1">Size</label>
+              <select id="bogo-size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
           </div>
-          <div class="bogo-selection">
-            <label for="bogo-size2">Size</label>
-            <select id="bogo-size2">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color2">Colour</label>
-            <select id="bogo-color2">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#2</div>
+            <div class="bogo-column">
+              <label for="bogo-color2">Colour</label>
+              <select id="bogo-color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size2">Size</label>
+              <select id="bogo-size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
           </div>
-    
         </div>
       </div>
 
+      <!---------- Offer 2 --------->
       <div class="bogo-offer" id="offer2">
         <div
           class="bogo-offer-header"
@@ -64,91 +79,114 @@
           <span class="bogo-discount">30% Off</span>
           <div class="bogo-offer-info">
             <input type="radio" name="bogo-offer" id="bogo-offer2-radio" />
-            <label for="bogo-offer2-radio">Buy 2 Get 4</label>
-            <span class="bogo-price">$24.00 USD</span>
-            <span class="bogo-most-popular">Most Popular</span>
+            <div class="bogo-offer-title">
+              <label for="bogo-offer2-radio">Buy 2 Get 3</label>
+              <span class="bogo-price">$25.00 USD</span>
+            </div>
+          </div>
+          <!-- Most Popular Tag -->
+          <div class="bogo-most-popular">Most Popular</div>
+        </div>
+        <div class="bogo-offer-details" id="offerDetails2">
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#1</div>
+            <div class="bogo-column">
+              <label for="bogo-color3">Colour</label>
+              <select id="bogo-color3">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size3">Size</label>
+              <select id="bogo-size3">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#2</div>
+            <div class="bogo-column">
+              <label for="bogo-color4">Colour</label>
+              <select id="bogo-color4">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size4">Size</label>
+              <select id="bogo-size4">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------- offer3 --------------------------->
+      <div class="bogo-offer" id="offer2">
+        <div
+          class="bogo-offer-header"
+          onclick="toggleOfferDetails('offerDetails2')"
+        >
+          <span class="bogo-discount">30% Off</span>
+          <div class="bogo-offer-info">
+            <input type="radio" name="bogo-offer" id="bogo-offer2-radio" />
+            <div class="bogo-offer-title">
+              <label for="bogo-offer2-radio">Buy 3 Get 6</label>
+              <span class="bogo-price">$36.00 USD</span>
+            </div>
           </div>
         </div>
         <div class="bogo-offer-details" id="offerDetails2">
-          <div class="bogo-selection">
-            <label for="bogo-size1">Size</label>
-            <select id="bogo-size1">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color1">Colour</label>
-            <select id="bogo-color1">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#1</div>
+            <div class="bogo-column">
+              <label for="bogo-color3">Colour</label>
+              <select id="bogo-color3">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size3">Size</label>
+              <select id="bogo-size3">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
           </div>
-          <div class="bogo-selection">
-            <label for="bogo-size2">Size</label>
-            <select id="bogo-size2">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color2">Colour</label>
-            <select id="bogo-color2">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
-          </div>
-          <!-- Placeholder content added here -->
-        </div>
-      </div>
-
-      <div class="bogo-offer" id="offer3">
-        <div
-          class="bogo-offer-header"
-          onclick="toggleOfferDetails('offerDetails3')"
-        >
-          <span class="bogo-discount bogo-discount-red">10% Off</span>
-          <div class="bogo-offer-info">
-            <input type="radio" name="bogo-offer" id="bogo-offer3-radio" />
-            <label for="bogo-offer3-radio">Buy 3 Get 6</label>
-            <span class="bogo-price">
-              $36.00 USD
-              <span class="bogo-old-price">$40.00 USD</span>
-            </span>
-          </div>
-        </div>
-        <div class="bogo-offer-details" id="offerDetails3">
-          <div class="bogo-selection">
-            <label for="bogo-size1">Size</label>
-            <select id="bogo-size1">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color1">Colour</label>
-            <select id="bogo-color1">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
-          </div>
-          <div class="bogo-selection">
-            <label for="bogo-size2">Size</label>
-            <select id="bogo-size2">
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-            </select>
-            <label for="bogo-color2">Colour</label>
-            <select id="bogo-color2">
-              <option value="Black">Black</option>
-              <option value="White">White</option>
-              <option value="Blue">Blue</option>
-            </select>
+          <div class="bogo-selection-row">
+            <div class="bogo-number">#2</div>
+            <div class="bogo-column">
+              <label for="bogo-color4">Colour</label>
+              <select id="bogo-color4">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="bogo-column">
+              <label for="bogo-size4">Size</label>
+              <select id="bogo-size4">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
 
+      <!----------------------- footer  -------------------------->
       <div class="bogo-footer">
         <span class="bogo-free-delivery">Free Delivery</span>
         <span class="bogo-total-price">Total: $18.00 USD</span>
